@@ -8,10 +8,16 @@
 - `<html>`
 - `<head>`
 - `<body>`
-- Headings
-- Paragraphs
-- Formating tags
+- Header
+- Paragraph
+- Text Formating tags
 - Semantic tags
+- Main
+- Section
+- Article
+- Footer
+- Horizontal rule
+- Line break
 
 ## Files
 
