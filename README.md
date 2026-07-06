@@ -1,35 +1,58 @@
-# 🚀 Full Stack Learning Journey 2026
+# 🚀 Full Stack Web Development Learning Journey
 
-Welcome to my Full Stack Development learning repository.
+Welcome to my Full Stack Web Development learning repository.
 
-I'm documenting my progress as I learn and build projects throughout my course.
+This repository documents my daily learning, practice exercises, assignments, and projects as I progress through my Full Stack Web Development course.
 
-## Learning Roadmap
+---
 
-- [x] HTML Introduction
-- [ ] HTML Elements
-- [ ] Forms
-- [ ] CSS
-- [ ] JavaScript
-- [ ] Bootstrap
-- [ ] React
-- [ ] Node.js
-- [ ] Express.js
-- [ ] Python
-- [ ] MySQL
-- [ ] MongoDB
-- [ ] Django
-- [ ] AWS
+## 📚 Course Progress
 
-## Repository Structure
+### HTML
+
+- ✅ 01 - Introduction
+- ✅ 02 - Lorem Ipsum Structure Clone
+- ✅ 03 - HTML Attributes, Links & Multimedia
+
+### Coming Soon
+
+- ⏳ HTML Lists
+- ⏳ HTML Tables
+- ⏳ HTML Forms
+- ⏳ CSS
+- ⏳ JavaScript
+- ⏳ Bootstrap
+- ⏳ React
+- ⏳ Node.js
+- ⏳ Express.js
+- ⏳ Python
+- ⏳ MySQL
+- ⏳ MongoDB
+- ⏳ Django
+- ⏳ AWS
+
+---
+
+## 📁 Repository Structure
 
 ```text
 HTML/
 CSS/
 JavaScript/
+Bootstrap/
 React/
 NodeJS/
 Python/
+Databases/
+Projects/
 ```
 
-> Every folder contains my practice code and notes for that topic.
+---
+
+## 🎯 Goal
+
+Build strong Full Stack Development skills through consistent daily practice and real-world projects.
+
+---
+
+**Learning one day at a time. 🚀**
