@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+  </head>
+  <body>
+    <h3>Forms</h3>
+    <form action="url" method="GET">
+      <div>
+        <label for="name">Username:</label>
+        <input
+          type="text"
+          name="username"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="checkbox" name="skill" value="html" id="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skill" value="css" id="css" />
+        <label for="css">CSS</label>
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <select id="country" name="country" for="country">
+          <option>India</option>
+          <option>UAE</option>
+          <option>USA</option>
+          <option>Canada</option>
+        </select>
+      </div>
+      <div>
+        <label for="colour">Select colour</label>
+        <input type="color" name="colour" id="colour" />
+      </div>
+      <div>
+        <label for="volume">Select range</label>
+        <input
+          type="range"
+          name="volume"
+          id="volume"
+          min="0"
+          max="100"
+          value="30"
+        />
+      </div>
+      <div>
+        <input type="hidden" name="user_id" value="101"/>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
