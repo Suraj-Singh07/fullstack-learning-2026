@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="/register" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Registration</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          minlength="3"
+          placeholder="Enter your full name"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="18" max="60" />
+        <br />
+        <br />
+
+        <input type="radio" name="gender" value="male" id="male" required />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" required />
+        <label for="female">Female</label>
+        <br />
+        <br />
+
+        <input type="checkbox" name="skill" value="dev" id="dev" />
+        <label for="dev">Development</label>
+        <input type="checkbox" name="skill" value="ai-ml" id="ai-ml" />
+        <label for="ai-ml">AI & ML</label>
+        <br />
+        <br />
+
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+          <option value="" disabled selected>Select a country</option>
+          <option value="usa">USA</option>
+          <option value="india">India</option>
+          <option value="uae">UAE</option>
+          <option value="canada">Canada</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" />
+        <br />
+        <br />
+
+        <label for="resume">Resume Upload:</label>
+        <input type="file" name="document" id="resume" />
+        <br />
+        <br />
+
+        <label for="about">About Yourself:</label>
+        <textarea
+          id="about"
+          name="about"
+          placeholder="Tell me about yourself"
+          rows="5"
+          cols="30"
+          minlength="10"
+          maxlength="200"
+        ></textarea>
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
