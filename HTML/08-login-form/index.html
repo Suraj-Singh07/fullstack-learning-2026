@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+  </head>
+  <body>
+    <form action="/submit" method="POST">
+      <fieldset>
+        <legend>Login</legend>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          minlength="3"
+          autocomplete="username"
+          required
+        />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          autocomplete="current-password"
+          required
+        />
+        <br /><br />
+        <input type="checkbox" name="remember" id="remember" />
+        <label for="remember">Remember Me:</label>
+        <br /><br />
+        <input type="checkbox" name="showpswd" id="showpswd" />
+        <label for="showpswd">Show Password</label>
+        <br /><br />
+        <a href="#">Forgot Password</a>
+        <br /><br />
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
