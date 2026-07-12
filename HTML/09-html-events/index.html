@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+  </head>
+  <body>
+    <button onclick="alert('Button clicked!')">Click me</button>
+    <button ondblclick="alert('Double clicked!')">Double click</button>
+    <p onmouseover="alert('Mouse over!')">Hover over me</p>
+    <p onmouseout="alert('Mouse left!')">Move the mouse away</p>
+    <form onsubmit="alert('Form Submitted')">
+      <select onchange="alert('Changed!')">
+        <option>India</option>
+        <option>USA</option>
+      </select>
+
+      <label for="typing">oninput</label>
+      <input type="text" id="typing" oninput="console.log('Typing...')" />
+
+      <!-- <label for="focus">Focused</label>
+        <input type="text" id="focus" onfocus="alert('Focused')"> -->
+
+      <label for="focus-lost">Focus lost</label>
+      <input type="text" id="focus-lost" onblur="alert('Focus lost')" />
+
+      <label for="onkeydown">onkeydown</label>
+      <input
+        type="text"
+        id="onkeydown"
+        onkeydown="console.log('Key pressed')"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
