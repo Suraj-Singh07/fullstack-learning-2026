@@ -1,0 +1,45 @@
+html{
+    font-size: 16px;
+}
+
+.parent{
+    width: 500px;
+    height: 200px;
+    background: lightblue;
+    font-size: 20px;
+}
+
+.child{
+    width: 50%;
+    height: 100%;
+    background: orange;
+    font-size: 2em;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+div{
+    width: 100vw;
+    height: 30vh;
+    background: gray;
+}
+
+.box{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+.block{
+    padding: 20px;
+    border: 5px solid blue;
+    display: inline;
+}
+
+.inline{
+    padding: 20px;
+    border: 5px solid rgb(27, 210, 13);
+    display: inline;
+}
