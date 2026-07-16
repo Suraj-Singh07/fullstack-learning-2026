@@ -1,0 +1,61 @@
+body{
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    position: relative;
+}
+
+.card{
+    width: 390px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+}
+
+.article-img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+span{
+    background-color: hsl(47, 88%, 63%);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.date{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 20px;
+    color: hsl(0, 0%, 42%);
+}
+
+.author{
+    display:flex;
+    align-items:center;
+}
+
+.avatar{
+    width: 35px;
+}
+
+.name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
