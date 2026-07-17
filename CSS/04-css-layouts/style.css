@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 50%;
+    height: 500px;
+    background-color: beige;
+    display: grid;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    /* align-items: end; */
+    /* justify-content: end; */
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border: 3px solid red;
+}
+
+.box1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
