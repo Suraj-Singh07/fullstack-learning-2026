@@ -25,7 +25,7 @@ Build a Bento Grid layout using HTML and CSS by combining Flexbox and CSS Grid.
 
 ## Progress
 
-🚧 In Progress (Completed approximately 50%)
+✅ Completed
 
 ## Learning Outcome
 
