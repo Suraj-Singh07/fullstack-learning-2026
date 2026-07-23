@@ -1,42 +1,46 @@
-# Day 10 - Bento Grid Design (In Progress)
+# Bento Grid Design
 
 ## Objective
 
-Build a Bento Grid layout using HTML and CSS by combining Flexbox and CSS Grid.
+Build a fully responsive Bento Grid layout using HTML and CSS.
+
+## Features
+
+- Responsive Design
+- CSS Grid
+- Flexbox
+- Grid Areas
+- Media Queries
+- Google Fonts
+- Reusable Card Components
+
+## Technologies Used
+
+- HTML5
+- CSS3
 
 ## Topics Practiced
 
-- Flexbox
 - CSS Grid
-- Grid Columns
-- Grid Rows
-- Grid Span
-- Gap
-- Border Radius
-- HSL Colors
-- Card Layout
-- Image Positioning
-
-## Files
-
-- index.html
-- style.css
-- assets/images
-
-## Progress
-
-✅ Completed
+- Flexbox
+- Media Queries
+- Grid Areas
+- Responsive Layout
+- Google Fonts
+- Box Model
+- Positioning
+- Typography
 
 ## Learning Outcome
 
-- Practiced combining Flexbox and CSS Grid.
-- Built reusable card components.
-- Positioned cards using Grid spanning.
-- Improved layout structuring and spacing.
+- Built a complete responsive Bento Grid layout.
+- Combined Flexbox and Grid effectively.
+- Practiced responsive design using media queries.
+- Improved component-based CSS organization.
 
 ## Status
 
-🚧 In Progress
+✅ Completed
 
 ## Date
 
