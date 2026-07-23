@@ -17,8 +17,11 @@ body{
 .container{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    max-width: 1150px;
+    gap: 40px;
+    width: 1150px;
+    width: 80%;
+    height: 80%;
+    margin: 50px;
 }
 
 .card{
@@ -31,7 +34,8 @@ body{
 .left-layer{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+    width: 260px;
     flex: 1;
 }
 
@@ -39,17 +43,18 @@ body{
     background-color: rgb(250, 238, 226);
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
     flex: 1;
-    padding: 0;
+    padding: 40px 40px;
 }
 
 .create-post-title{
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     line-height: 0.9;
     font-weight: 500;
     letter-spacing: -2px;
-    padding: 0px 30px;
+    margin: 0px 0px 24px;
 }
 
 .purple{
@@ -68,9 +73,10 @@ body{
     justify-content: center;
     gap: 40px;
     flex: 1;
+    padding: 45px;
 }
 .ai-content-title { 
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 0.9;
     font-weight: 500;
     letter-spacing: -1px;
@@ -83,8 +89,7 @@ body{
 .right-layer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 1fr 1fr 1fr; */
-    /* grid-auto-rows: minmax(150px, auto); */
+    /* grid-row: 150px; */
     flex: 3;
     gap: 30px;
 }
@@ -92,19 +97,20 @@ body{
 .five-star-post{
     background-color: hsl(256, 67%, 59%);
     grid-column: span 2;
+    grid-row: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 40px;
+    padding: 94px;
 }
 
 .five-star-title{
     color: hsl(0, 0%, 100%);
-    font-size: 3.2rem;
-    line-height: 0.7;
+    font-size: 5.2rem;
+    line-height: 0.9;
     font-weight: 500;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
 }
 
 .italic{
@@ -132,13 +138,13 @@ body{
     grid-row: span 2;
     flex-direction: column;
     gap: 25px;
-    padding: 50px 30px;
+    padding: 60px 40px;
 }
 
 .schedule-post-title{
-    font-size: 1.8rem;
+    font-size: 2.9rem;
     line-height: 0.9;
-    font-weight: 500;
+    font-weight: 520;
     letter-spacing: -1px;
 }
 
@@ -148,7 +154,7 @@ body{
 }
 
 .schedule-post-desc{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     font-weight: 500;
 }
@@ -157,57 +163,60 @@ body{
     background-color: hsl(0, 0%, 100%);
     flex-direction: column;
     gap: 20px;
+    padding: 45px;
 }
 
 .multiple-platforms-img{
-    width: 149%;
+    width: 156%;
 }
 
 .multiple-platforms-title{
- font-size: 1.8rem;
+ font-size: 3rem;
  line-height: 0.9;
  font-weight: 500;
  letter-spacing: -1px;
+ padding-bottom: 0px;
 }
 
 .consistent-schedule-post{
     background-color: hsl(39, 100%, 71%);
     flex-direction: column;
     justify-content: space-evenly;
-    /* gap: 50px; */
-    padding-bottom: 0;
+    padding: 40px 40px 0px 40px;
 }
 
 .consistent-schedule-title{
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     line-height: 0.9;
     font-weight: 500;
     letter-spacing: -1px;
+    padding-bottom: 50px;
 }
 
 .consistent-schedule-img{
     width: 100%;
-    margin-bottom: -90px;
+    margin-bottom: -85px;
 }
 
 .audience-growth-post{
     background-color: hsl(0, 0%, 100%);
     flex-direction: column;
     justify-content: center;
+    padding: 40px;
 }
 
 .audience-growth-ratio{
-    font-size: 3.5rem;
+    font-size: 5rem;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -2px;
 }
 
 .audience-growth-title{
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     margin-top: 10px;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .audience-growth-img{
@@ -221,17 +230,123 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    padding: 50px;
 }
 
 .grow-followers-img{
     width: 45%;
-    max-width: 200px;
 }
 
 .grow-followers-title{
     color: hsl(0, 0%, 100%);
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     line-height: 0.9;
     font-weight: 500;
     letter-spacing: -1px;
+}
+
+@media screen and (device-width: 390px){
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+       flex-direction: column; 
+       width: 100%;
+       margin: 20px 0px;
+       /* gap: 30px; */
+    }
+
+    .left-layer{
+        order: 2;
+    }
+
+    .right-layer{
+        order: 1;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "five-star"
+        "multiple-platforms"
+        "consistent-schedule"
+        "schedule"
+        "grow-followers"
+        "audience-growth";
+    }
+
+    .five-star-post{
+        grid-area: five-star;
+        padding: 60px 30px;
+    }
+
+    .five-star-title{
+        font-size: 2rem;
+    }
+
+    .schedule-post{
+        grid-area: schedule;
+        text-align: center;
+    }
+
+    .schedule-post-title{
+        font-size: 1.7rem;
+    }
+
+    .schedule-post-img{
+        width: 100%;
+    }
+
+    .multiple-platforms-post{
+        grid-area: multiple-platforms;
+    }
+
+    .multiple-platforms-img{
+        width: 100%;
+    }
+
+    .multiple-platforms-title{
+        font-size: 1.6rem;
+    }
+
+    .consistent-schedule-post{
+        grid-area: consistent-schedule;
+    }
+
+    .consistent-schedule-title{
+        font-size: 2.2rem;
+        padding-bottom: 25px;
+    }
+
+    .consistent-schedule-img{
+        width: 100%;
+        margin-bottom: -30px;
+    }
+
+    .audience-growth-post{
+        grid-area: audience-growth;
+    }
+
+    .audience-growth-ratio{
+        font-size: 3.7rem;
+    }
+
+    .audience-growth-title{
+        font-size: 1.5rem;
+    }
+
+    .grow-followers-post{
+        grid-area: grow-followers;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grow-followers-title{
+        font-size: 2rem;
+    }
+
+    .grow-followers-img{
+        width: 100%;
+    }
+
+
 }
