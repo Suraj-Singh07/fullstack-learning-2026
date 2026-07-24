@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --txt-size: 30px;
+    --txt-color: rgb(182, 239, 50);
+}
+
+div:first-child{
+    background-color: bisque;
+}
+
+p:nth-child(2){
+    color:blue;
+}
+
+p:first-child{
+    background-color: brown;
+}
+
+h2::after{
+    content: " , have a good day";
+}
+
+span::before{
+    content: "It is written in an span tag ";
+    color: var(--txt-color);
+}
+
+p::first-letter{
+    font-size: var(--txt-size);
+    color: var(--txt-color);
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border: 2px solid black;
+    /* transform: rotate(0.125turn); */
+    /* transform: rotateX(96deg); */
+    /* transform: scale(1.6); */
+    /* transform: skewY(10deg); */
+    /* transform: translateY(100%) skew(40deg) translateX(80%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* transition-property: background-color, transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+
+    transition: all 3s cubic-bezier(1, 0.63, 0.05, 0.8) 1s;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid purple;
+}
+
+.translate{
+    transform: translateX(10vw) translateY(10vh) scale(2);
+    background-color: blue;
+}
