@@ -1,0 +1,555 @@
+// 3. Create variables to store your name, age, and city and print them to the console. 
+let name = 'Suraj';
+let age = 25;
+let city = 'Mumbai';
+console.log("Name:" + name + " Age:" + age + " City:" + city);
+
+//5. Check the data type of different values using typeof. 
+console.log(typeof ("abc"));
+console.log(typeof (1));
+console.log(typeof (true));
+console.log(typeof (null));
+console.log(typeof (undefined));
+
+//9. Create two numbers and perform addition, subtraction, multiplication, and division. 
+let num1 = 9;
+let num2 = 4;
+console.log('Addition:' + (num1 + num2));
+console.log('Subtraction:' + (num1 - num2));
+console.log('Multiplication:' + (num1 * num2));
+console.log('Division:' + (num1 / num2));
+
+// 10. Find the remainder when one number is divided by another using %.
+let remainder = 25 % 4;
+console.log(remainder);
+
+// 11. Swap the values of two variables. 
+let var1 = 20;
+let var2 = 50;
+let var3 = var1;
+var1 = var2;
+var2 = var3;
+console.log(var1);
+console.log(var2);
+
+// 12. Convert a string "100" into a number. 
+let string = "100";
+let num = Number(string);
+console.log(num);
+
+// 13. Convert a number 100 into a string. 
+let number = 100;
+let string1 = number.toString();
+console.log(string1);
+
+// 14. Create a program that calculates the area of a rectangle. 
+let length = 90;
+let width = 55;
+let area = length * width;
+console.log(area);
+
+// 15. Create a program that converts Celsius to Fahrenheit. 
+let celsius = 48;
+let fahrenheit = (celsius * 1.8) + 32;
+console.log(fahrenheit);
+
+// 16. Write a program to check whether a number is positive, negative, or zero. 
+let number1 = -9;
+if (number1 < 0) {
+    console.log('It is a negative number');
+} else if (number1 === 0) {
+    console.log('It is a zero');
+} else {
+    console.log('It is a positive number');
+}
+
+// 17. Check whether a number is even or odd. 
+let number2 = 86;
+if (number2 % 2 === 0) {
+    console.log('It is an even number');
+} else {
+    console.log('It is an odd number');
+}
+
+// 18. Check whether a person is eligible to vote based on age. 
+let age1 = 16;
+if (age1 < 18) {
+    console.log('You are not eligible to vote');
+} else {
+    console.log('You are eligible to vote');
+}
+
+// 19. Find the largest of two numbers. 
+let number3 = 4;
+let number4 = -4;
+if (number3 > number4) {
+    console.log('number3 is the largest number');
+} else if (number3 < number4) {
+    console.log('number4 is the largest number');
+} else {
+    console.log('Both are equal');
+}
+
+// 20. Find the largest of three numbers. 
+let number5 = 3;
+let number6 = 7;
+let number7 = 18;
+if (number5 > number6 && number5 > number7) {
+    console.log('number5 is the largest number');
+} else if (number6 > number5 && number6 > number7) {
+    console.log('number6 is the largest number');
+} else if (number7 > number5 && number7 > number6) {
+    console.log('number7 is the largest number');
+} else {
+    console.log('All numbers are equal');
+}
+
+// 21. Check whether a given year is a leap year. 
+let year = 1900;
+if ((year % 4 === 0 && year % 100 !== 0)) {
+    console.log('It is a leap year');
+} else {
+    console.log('It is a standard common year or a century year');
+}
+
+// 22. Check whether a person has passed or failed based on marks.
+let marks = 260;
+if (marks >= 175) {
+    console.log('You Pass');
+} else {
+    console.log('You Fail');
+}
+
+// 23. Create a grading system:
+let totalMarks = 340;
+let percentage = (totalMarks / 500) * 100;
+if (percentage >= 90) {
+    console.log('Grade A');
+} else if (percentage >= 80) {
+    console.log('Grade B');
+} else if (percentage >= 70) {
+    console.log('Grade C');
+} else if (percentage >= 60) {
+    console.log('Grade D');
+} else {
+    console.log('Grade F');
+}
+
+// 24. Check whether a character is a vowel or consonant.
+let char = 'f';
+let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+if (alphabet.includes(char)) {
+    if ('aeiou'.includes(char)) {
+        console.log('Yes, It is a Vowel');
+    } else {
+        console.log("No, It's a Consonant");
+    }
+} else {
+    console.log("It's not a vowel and nor a consonant");
+}
+
+// 25. Check whether a number is divisible by both 3 and 5.
+let num3 = 15;
+if (num3 % 3 === 0 && num3 % 5 === 0) {
+    console.log('Yes, your number is divisible by both 3 and 5');
+} else {
+    console.log('No, Your number is not divisible by both 3 and 5');
+}
+
+// 26. Create a simple calculator using if/else or switch.
+let value1 = 6;
+let value2 = 14;
+let sign = '*';
+if (sign === '+') {
+    console.log(value1 + value2);
+} else if (sign === '-') {
+    console.log(value1 - value2);
+} else if (sign === '*') {
+    console.log(value1 * value2);
+} else if (sign === '/') {
+    console.log(value1 / value2);
+} else {
+    console.log('Input a correct sign');
+}
+
+// 27. Check whether three sides can form a valid triangle.
+let side1 = 5;
+let side2 = 8;
+let side3 = 7;
+if (side1 > 0 && side2 > 0 && side3 > 0) {
+    if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1)) {
+        console.log('It is a valid Triangle');
+    } else {
+        console.log("It's not a valid Triangle");
+    }
+} else {
+    console.log("It's not a valid triangle");
+}
+
+// 28. Determine whether a number is a single-digit, double-digit, or triple-digit number. 
+let digit = -20;
+let numberr = Math.abs(digit);
+if (numberr >= 0 && numberr <= 9) {
+    console.log('It is a single-digit number');
+} else if (numberr >= 10 && numberr <= 99) {
+    console.log('It is a double-digit number');
+} else if (numberr >= 100 && numberr <= 999) {
+    console.log('Its a triple-digit number');
+} else {
+    console.log('Enter a number or it is a more than 3 digit number');
+}
+
+// 29. Check whether a person is eligible for a driving license based on age. 
+let age2 = 17;
+if (age2 >= 16 && age2 <= 17) {
+    console.log('You are eligible for driving gearless two-wheelers under 50cc');
+} else if (age2 >= 18) {
+    console.log('You are eligible for driving regular cars and geared motorcycles');
+} else {
+    console.log('You are not eligible for driving');
+}
+
+// 30. Create a program that determines whether a given temperature is cold, normal, or hot. 
+let temp = 28;
+if (temp <= 19) {
+    console.log('Cold Temperature');
+} else if (temp >= 20 && temp <= 29) {
+    console.log('Normal Temperature');
+} else {
+    console.log('Hot Temperature');
+}
+
+// 31. Print numbers from 1 to 10 using a for loop.
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// 32. Print numbers from 10 to 1. 
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+// 33. Print all even numbers from 1 to 100.
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// 34. Print all odd numbers from 1 to 100.
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
+
+// 35. Print the multiplication table of a given number.
+let num4 = 9;
+for (let i = 1; i <= 10; i++) {
+    console.log(num4 * i);
+}
+
+// 36. Find the sum of numbers from 1 to 100.
+let sum = 0;
+for (let i = 1; i <= 100; i++) {
+    sum += i;
+}
+console.log(sum);
+
+// 37. Find the factorial of a number.
+let num5 = 9;
+let fact = 1;
+for (let i = 1; i <= num5; i++) {
+    fact *= i;
+}
+console.log(fact);
+
+// 38. Count how many digits are in a number.
+let number8 = -28;
+let digit1 = 0;
+number8 = Math.abs(number8);
+if (number8 === 0) {
+    digit1++
+} else {
+    while (number8 >= 1) {
+        digit1++;
+        number8 = Math.floor(number8 / 10);
+    }
+}
+console.log(digit1);
+
+
+// 39. Reverse a number.
+let number9 = 12345;
+let rev = 0;
+while (number9 > 0) {
+    let num = number9 % 10;
+    rev = rev * 10 + num;
+    number9 = Math.floor(number9 / 10);
+}
+console.log(rev);
+
+// 40. Find the sum of the digits of a number.
+let number10 = 1234;
+let sum1 = 0;
+while (number10 > 0) {
+    let num = number10 % 10;
+    sum1 += num;
+    number10 = Math.floor(number10 / 10)
+}
+console.log(sum1);
+
+// 41. Check whether a number is a palindrome.
+let number11 = 1251;
+let unRev = number11;
+let rev2 = 0;
+while (number11 > 0) {
+    let num = number11 % 10;
+    rev2 = rev2 * 10 + num;
+    number11 = Math.floor(number11 / 10);
+}
+if (unRev === rev2) {
+    console.log("It's a Palindrome");
+} else {
+    console.log("It's not a Palindrome");
+}
+
+// 42. Print all numbers between 1 and 100 that are divisible by 3.
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+// 43. Print the first 10 multiples of a number.
+let numm = 3;
+for (let i = 1; i <= 10; i++) {
+    console.log(numm * i);
+}
+
+// 44. Print this pattern:
+// *
+// **
+// ***
+// ****
+// ***** 
+for (let i = 1; i <= 5; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+        row += '*';
+    }
+    console.log(row);
+}
+
+// 45. Print this pattern:
+// 1
+// 12
+// 123
+// 1234
+// 12345
+for (let i = 1; i <= 5; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+        row += j;
+    }
+    console.log(row);
+}
+
+//! 46. Find the length of a string without using length if possible.
+let string5 = 'JavaScript';
+let length2 = 0;
+for (let word of string5) {
+    length2++;
+}
+console.log(length2);
+
+// 47. Convert a string to uppercase.
+let greet = 'welcome';
+console.log(greet.toUpperCase());
+
+// 48. Convert a string to lowercase.
+let greet1 = 'Hello';
+console.log(greet1.toLowerCase());
+
+// 49. Reverse a string.
+let word = 'hello';
+let len = word.length - 1;
+let reverse = '';
+for (let i = len; i >= 0; i--) {
+    reverse += word[i];
+}
+console.log(reverse);
+
+// 50. Check whether a string is a palindrome.
+let string2 = 'madam';
+let length1 = string2.length - 1;
+let rev3 = '';
+for (let i = length1; i >= 0; i--) {
+    rev3 += string2[i];
+}
+if (string2 === rev3) {
+    console.log("Yes, it's a Palindrome");
+} else {
+    console.log("No, it's not a Palindrome");
+}
+
+// 51. Count the number of vowels in a string.
+let string3 = 'variablesname';
+let count = 0;
+for (let i = 0; i < string3.length; i++) {
+    if ('aeiou'.includes(string3[i])) {
+        count++;
+    }
+}
+console.log(count);
+
+// 52. Count the number of spaces in a string.
+let string4 = ' Hey there ';
+let space = 0;
+for (let i = 0; i < string4.length; i++) {
+    if (string4[i] === ' ') {
+        space++;
+    }
+}
+console.log(space);
+
+//! 53. Count how many times a particular character appears in a string.
+// let string5 = 'javascript';
+
+
+// 54. Find the first character of a string.
+let string6 = ' Hi buddy';
+let cleanString = string6.trim();
+console.log(cleanString[0]);
+console.log(cleanString);
+
+// 55. Find the last character of a string.
+let string7 = ' Awesome ';
+let cleanString1 = string7.trim();
+console.log(cleanString1[cleanString1.length - 1]);
+console.log(cleanString1.at(-1));
+
+// 56. Remove all spaces from a string.
+let string8 = ' H E L L O ';
+console.log(string8.replace(/ /g, ''));
+console.log(string8.replaceAll(' ', ''));
+
+// 57. Capitalize the first letter of a string.
+let string9 = 'javascript';
+let newString = '';
+for (let i = 0; i < string9.length; i++) {
+    if (i === 0) {
+        newString += string9[i].toUpperCase();
+    } else {
+        newString += string9[i];
+    }
+}
+console.log(newString);
+
+// 58. Check whether a string contains a particular word.
+let string10 = 'Javascript also used in website development';
+let check = 'for';
+if (string10.includes(check)) {
+    console.log('Yes, it contains that word');
+} else {
+    console.log("No, it doesn't contain that word");
+}
+
+// 59. Create a function that accepts two numbers and returns their sum.
+function sumOfTwo(x, y) {
+    return x + y;
+}
+let addition = sumOfTwo(5, 9);
+console.log(addition);
+
+// 60. Create a function that accepts a number and returns whether it is even or odd.
+function checkOddEven(x) {
+    if (x % 2 === 0) {
+        return 'It is an even number';
+    } else {
+        return 'It is an odd number';
+    }
+}
+let num6 = checkOddEven(25);
+console.log(num6);
+
+// 61. Create a function that accepts three numbers and returns the largest number.
+function largestNumber(x, y, z) {
+    if ((x >= y) && (x >= z)) {
+        return `${x} is the largest number among 3`;
+    } else if ((y >= x) && (y >= z)) {
+        return `${y} is largest number among 3`;
+    } else {
+        return `${z} is largest number among 3`;
+    }
+}
+let num7 = largestNumber(4, 78, 23);
+console.log(num7);
+
+// 62. Create a function that calculates the factorial of a number.
+let num8 = (x) => {
+    let fact = 1;
+    for (let i = 1; i <= x; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+console.log(num8(5));
+
+// 63. Create a function that reverses a string.
+let word1 = (x) => {
+    let len = x.length - 1
+    let temp = '';
+    for (let i = len; i >= 0; i--) {
+        temp += x[i];
+    }
+    return temp;
+}
+console.log(word1('String'));
+
+// 64. Create a function that checks whether a number is prime.
+let num9 = (x) => {
+    if (x > 1) {
+        for (let i = 2; i < x; i++) {
+            if (x % i === 0) {
+                return 'It is a Non-Prime number'
+            }
+        }
+        return 'It is a Prime number'
+    } else {
+        return 'Select a number greater than 1';
+    }
+}
+console.log(num9(27));
+
+// 65. Create a function that checks whether a string is a palindrome.
+let string11 = (x) => {
+    let y = x.toLowerCase();
+    let len = y.length - 1;
+    let rev = '';
+    for (let i = len; i >= 0; i--) {
+        rev += y[i];
+    }
+    if (y === rev) {
+        return "It's a palindrome"
+    } else {
+        return "It's not  a Palindrome"
+    }
+}
+console.log(string11('Madam'));
+
+// 66. Create a function called calculate() that accepts two numbers and an operator (+, -, *, /) and returns the calculated result.
+function calculate(value1, value2, operator) {
+    if (operator === '+') {
+        return value1 + value2;
+    } else if (operator === '-') {
+        return value1 - value2;
+    } else if (operator === '*') {
+        return value1 * value2;
+    } else if (operator === '/') {
+        return value1 / value2;
+    } else {
+        return 'Select an operator between (+, -, *, /)'
+    }
+}
+console.log(calculate(10, 8, '*'));
