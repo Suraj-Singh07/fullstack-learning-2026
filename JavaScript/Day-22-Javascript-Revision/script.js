@@ -87,3 +87,43 @@ console.log(findHighestScorer([
     { name: "Anita", score: 92 },
     { name: "Vikram", score: 78 }
 ]));
+
+// Get pending tasks
+function getPendingTasks(tasks) {
+    let pendingTasks = tasks.filter(s => s.done === false);
+    return pendingTasks;
+}
+console.log(getPendingTasks([
+    { task: "Buy groceries", done: false },
+    { task: "Finish homework", done: true }
+]));
+
+// Add a new task
+function addTask(tasks, taskName) {
+    let newTask = { task: taskName, done: false };
+    let allTasks = [...tasks, newTask,];
+    return allTasks;
+}
+console.log(addTask([
+    { task: "Buy groceries", done: false },
+    { task: "Finish homework", done: true }
+],
+    "Clean the house"));
+
+// Complete a task
+function completeTask(tasks, taskName) {
+    let allTasks = tasks.map(t => {
+        if (t.task === taskName) {
+            let updatedTasks = { ...t, done: true };
+            return updatedTasks;
+        } else {
+            return t;
+        }
+    });
+    return allTasks;
+}
+console.log(completeTask([
+    { task: "Finish homework", done: true },
+    { task: "Buy groceries", done: false }
+],
+    "Buy groceries"));
