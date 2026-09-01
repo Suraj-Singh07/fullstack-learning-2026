@@ -7,8 +7,6 @@ This folder contains my JavaScript revision and practice work from my Full Stack
 - Variables
 - Data types
 - JavaScript types
-- Internal JavaScript
-- External JavaScript
 - `console.log()`
 - `document.write()`
 - `document.getElementById()`
@@ -16,14 +14,15 @@ This folder contains my JavaScript revision and practice work from my Full Stack
 - Function parameters
 - Return values
 - Conditional statements
-- `if...else`
-- `else if` ladder
 - Strings
-- String `.length`
 - Arrays
-- Array traversal using `for` loop
 - Objects
-- Accessing object properties
+- Array of objects
+- `filter()`
+- `map()`
+- Arrow functions
+- Spread operator (`...`)
+- Object manipulation
 
 ## 🧩 Practice Programs
 
@@ -58,6 +57,18 @@ Created a function that takes an array of numbers and calculates the total sum u
 ### 5. Highest Scorer
 
 Created a function that takes an array of student objects and finds the student with the highest score.
+
+### 6. Get Pending Tasks
+
+Used `filter()` to find and return tasks whose `done` property is `false`.
+
+### 7. Add a New Task
+
+Used the spread operator to add a new task object to an existing array.
+
+### 8. Complete a Task
+
+Used `map()` and the spread operator to update a task and change its `done` property to `true`.
 
 ## 🛠️ Technologies Used
 
